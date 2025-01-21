@@ -19,6 +19,10 @@
     max-width: 1200px; /* Keeps content centered and prevents too much stretch */
 }
 
+.navbar-toggler {
+    border: 2px solid gold;
+}
+
 .navbar-brand {
     margin-left: 100px;
     color: gold;
