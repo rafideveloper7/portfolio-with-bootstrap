@@ -1,0 +1,52 @@
+/* About Me Section */
+.about-me {
+    width: 95%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #04a3e7;
+    /* border: 2px solid red; */
+    margin: 20px auto;
+    border-radius: 5px;
+
+}
+
+/* Profile Image */
+.about-img {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%; /* Circular Image */
+    /* object-fit: cover; */
+    border: 4px solid goldenrod;
+}
+
+/* About Me Text */
+.about-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: goldenrod;
+}
+
+.about-text p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .about-me {
+        height: auto;
+        padding: 50px 5%;
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .about-img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+}
