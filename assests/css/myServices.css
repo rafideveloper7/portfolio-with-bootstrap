@@ -2,7 +2,7 @@
 .services {
     width: 100%;
     padding: 60px 10%;
-    background-color: #2486BF;
+    background-color: #999b9c;
     text-align: center;
 }
 
@@ -11,48 +11,34 @@
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 40px;
-    color: goldenrod;
+    color: rgb(255, 255, 255);
 }
 
 /* Service Box */
 .service-box {
     width: 300px;
-    background: white;
+    background: rgb(78, 65, 65);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: transform 0.3s ease;
-    /* Adds space between the boxes */
-    margin: 10px;
+    margin:  10px 100px;
+    /* background-color: #394063b3; */
+    color: yellow;
 }
 
 .service-box:hover {
     transform: translateY(-5px);
 }
 
-.service-box h3 {
-    font-size: 26px;
-    color: #04a3e7;
-    margin-bottom: 15px;
-}
 
 .service-box p {
-    font-size: 18px;
-    color: #555;
+    font-size: 24px;
+    color: yellow;
     margin-bottom: 15px;
 }
 
-.service-box ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.service-box ul li {
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: #333;
-}
 
 /* Responsive Design */
 @media (max-width: 991px) {
@@ -61,9 +47,9 @@
     }
 
     .service-box {
-        text-align: left;
-        /* margin-right: 40px; */
+        text-align: center;
         justify-content: center;
-        /* Adds space between stacked boxes */
+        
+        width: 500px;
     }
 }
