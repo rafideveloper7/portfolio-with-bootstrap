@@ -1,80 +1,121 @@
-/* About Me Section */
-.about-me {
+/* About Section */
+#about {
+    background-color: #2a3244;
     width: 95%;
-    height: 400px;
-    background-color: #636c70;
-    margin: 20px auto;
-    border-radius: 5px;
+    margin: 20px 50px;
+    border-radius: 10px;
 }
 
-.about-me .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+#about img {
+    background-color: rgb(48, 47, 47);
+    margin: 50px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Profile Image */
-.about-me .profile-img {
-    width: 330px;
-    height: 330px;
-    border-radius: 50%;
-    /* Circular Image */
-    border: 4px solid goldenrod;
-    margin-top: 30px;
+.about_text {
+    background-color: rgb(48, 47, 47);
+    margin: 20px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5); /* Four-sided shadow */
 }
 
-.about-me .profile-img img {
-    width: 330;
-    height: 330;
-    border-radius: 50%;
-    object-fit: cover;
-    /* Ensures the image fits the circle */
-}
-
-.about-content {
-    margin-left: 100px;
-}
-
-/* About Me Text */
-.about-content h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 15px;
+.about_text h2 {
     color: goldenrod;
+    font-weight: 600;
 }
 
-.about-content p {
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 10px;
+.about_text p {
+    color: whitesmoke;
 }
 
-/* Responsive Design */
-@media (max-width: 991px) {
-    .about-me {
-        height: fit-content;
-        padding: 50px 5%;
-        text-align: center;
-        /* max-width: 600px; */
+.socials-icons ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.socials-icons i {
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Media Query for smaller screens (e.g., mobile devices) */
+@media only screen and (max-width: 768px) {
+    #about {
+        margin: 10px; /* Reduce margin for small screens */
     }
 
-    .about-me .container {
+    #about img {
+        margin: 20px;
+        max-width: 100%; /* Make the image responsive */
+        max-height: 250px; /* Optional: Adjust image height for small screens */
+    }
+
+    .about_text {
+        padding: 20px; /* Reduce padding for small screens */
+    }
+
+    .socials-icons ul {
         display: flex;
-        flex-direction: column;
-        padding: 20px;
+        justify-content: center;
+        padding: 0;
+        margin-top: 20px;
     }
 
-    .about-me .profile-img {
-        width: 130px;
-        height: 130px;
+    .socials-icons ul li {
+        margin: 0 8px; /* Reduce space between icons */
     }
 
-    .profile-img img {
-        width: 120px;
-        height: 120px;
+    .socials-icons i {
+        width: 50px; /* Adjust icon size for small screens */
+        height: 50px;
+        margin: 5px;
+        font-size: 20px; /* Smaller icon font size */
+    }
+}
+
+/* Media Query for very small screens (e.g., smaller mobile devices) */
+@media only screen and (max-width: 480px) {
+    #about {
+        margin: 10px; /* Even smaller margin for very small screens */
     }
 
-    .about-content {
-        margin: 0px;
+    .about_text {
+        padding: 10px; /* Further reduce padding */
+        width: 300px;
     }
+
+    .socials-icons i {
+        width: 40px; /* Make icons even smaller */
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+/* Skills Section */
+#skills .card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+#skills .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#skills .card-title {
+    font-weight: bold;
+    color: #333;
+}
+
+#skills .card-text {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
 }
