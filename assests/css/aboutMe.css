@@ -10,7 +10,7 @@
     background-color: rgb(48, 47, 47);
     margin: 50px;
     max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5); /* Four-sided shadow */
 }
 
 .about_text {
@@ -30,50 +30,21 @@
     color: whitesmoke;
 }
 
-.socials-icons ul li {
-    text-decoration: none;
-    list-style: none;
-}
-
-.socials-icons i {
-    width: 130px;
-    height: 130px;
-    margin: 10px;
-    padding: 10px;
-}
 
 /* Media Query for smaller screens (e.g., mobile devices) */
 @media only screen and (max-width: 768px) {
     #about {
         margin: 10px; /* Reduce margin for small screens */
     }
-
+    
     #about img {
-        margin: 20px;
+        margin: 60px;
         max-width: 100%; /* Make the image responsive */
         max-height: 250px; /* Optional: Adjust image height for small screens */
     }
 
     .about_text {
         padding: 20px; /* Reduce padding for small screens */
-    }
-
-    .socials-icons ul {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin-top: 20px;
-    }
-
-    .socials-icons ul li {
-        margin: 0 8px; /* Reduce space between icons */
-    }
-
-    .socials-icons i {
-        width: 50px; /* Adjust icon size for small screens */
-        height: 50px;
-        margin: 5px;
-        font-size: 20px; /* Smaller icon font size */
     }
 }
 
@@ -95,27 +66,4 @@
     }
 }
 
-/* Skills Section */
-#skills .card {
-    border: none;
-    transition: transform 0.3s ease;
-}
 
-#skills .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#skills .card-title {
-    font-weight: bold;
-    color: #333;
-}
-
-#skills .card-text {
-    color: #555;
-}
-
-/* Footer */
-footer {
-    background-color: #343a40;
-}

@@ -1,0 +1,24 @@
+/* Skills Section */
+#skills .card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+#skills .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#skills .card-title {
+    font-weight: bold;
+    color: #333;
+}
+
+#skills .card-text {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+}
