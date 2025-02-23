@@ -38,7 +38,7 @@
     }
     
     #about img {
-        margin: 60px;
+        margin: 30px;
         max-width: 100%; /* Make the image responsive */
         max-height: 250px; /* Optional: Adjust image height for small screens */
     }
