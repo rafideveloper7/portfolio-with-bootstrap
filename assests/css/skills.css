@@ -2,6 +2,7 @@
 #skills .card {
     border: none;
     transition: transform 0.3s ease;
+    background-color: #2a3244;
 }
 
 #skills .card:hover {
@@ -11,14 +12,14 @@
 
 #skills .card-title {
     font-weight: bold;
-    color: #333;
+    color: goldenrod;
 }
 
 #skills .card-text {
-    color: #555;
+    color: whitesmoke;
 }
 
-/* Footer */
-footer {
-    background-color: #343a40;
+.skill-container h2 {
+    color: goldenrod;
+    font-weight: 700;
 }
