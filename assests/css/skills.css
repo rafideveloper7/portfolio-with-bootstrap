@@ -7,6 +7,7 @@
     width: 367px;
     height: 300px;
     margin: 10px;
+    overflow-y: hidden;
 }
 
 #skills .card:hover {
@@ -27,4 +28,11 @@
 .skill-container h2 {
     color: goldenrod;
     font-weight: 700;
+}
+
+/* Media Query for Small Screens (Mobile, 576px and below) */
+@media only screen and (max-width: 576px) {
+    #skill .card {
+        width: 350px;
+    }
 }
