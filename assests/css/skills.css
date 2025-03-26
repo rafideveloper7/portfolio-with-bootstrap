@@ -3,6 +3,10 @@
     border: none;
     transition: transform 0.3s ease;
     background-color: #2a3244;
+    background-color: #7c879f;
+    width: 367px;
+    height: 300px;
+    margin: 10px;
 }
 
 #skills .card:hover {
@@ -17,6 +21,7 @@
 
 #skills .card-text {
     color: whitesmoke;
+    text-align: left;
 }
 
 .skill-container h2 {

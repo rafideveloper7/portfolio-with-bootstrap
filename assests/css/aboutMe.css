@@ -1,73 +1,129 @@
 /* About Section */
-#about {
-    background-color: #302f2f;
-    width: 95%;
-    margin: 20px 50px;
-    border-radius: 10px;
+.socials-icons {
+    width: 400px;
+    margin: 20px;
+    margin-left: 120px;
+}
+
+.socials-icons .i {
+    margin-left: 20px;
+    font-size: 32px;
 }
 
 #about img {
     background-color: #2a3244;
+    background-color: #2047a3;
     margin: 50px;
     max-width: 400px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5); /* Four-sided shadow */
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    /* Four-sided shadow */
 }
 
 .about_text {
-    width: 1000px;
+    width: 95%;
+    height: fit-content;
     background-color: #2a3244;
     margin: 20px;
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5); /* Four-sided shadow */
-    overflow-y: hidden;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .about_text h2 {
     color: goldenrod;
     font-weight: 600;
+    margin-top: 30px;
 }
 
 .about_text p {
     color: whitesmoke;
+    margin-top: 30px;
+}
+
+.about_text .btn {
+    margin-top: 30px;
 }
 
 
-/* Media Query for smaller screens (e.g., mobile devices) */
-@media only screen and (max-width: 768px) {
-    #about {
-        margin: 10px; /* Reduce margin for small screens */
+/* Responsiveness */
+
+/* Media Query for Medium Screens (Tablets, 768px and below) */
+@media only screen and (max-width: 992px) {
+    .about_text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .img-about-me {
+        width: 250px;
+        margin: 0 auto 20px auto;
+    }
+
+    .socials-icons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .socials-icons .i {
+        margin: 0 10px;
+        font-size: 24px;
     }
 
     #about img {
-        margin: 20px;
-        max-width: 100%; /* Make the image responsive */
-        max-height: 250px; /* Optional: Adjust image height for small screens */
-    }
-
-    .about_text {
-        padding: 20px; /* Reduce padding for small screens */
-        max-height: 500px; /* Adjust height for small screens */
-        overflow-y: scroll; /* Add vertical scrolling */
+        margin: 20px auto;
+        max-width: 100%;
+        max-height: 250px;
     }
 }
 
-/* Media Query for very small screens (e.g., smaller mobile devices) */
-@media only screen and (max-width: 480px) {
-    #about {
-        margin: 10px; /* Even smaller margin for very small screens */
-    }
-
+/* Media Query for Small Screens (Mobile, 576px and below) */
+@media only screen and (max-width: 576px) {
     .about_text {
-        padding: 10px; /* Further reduce padding */
-        width: 300px;
+        width: 90%;
+        padding: 15px;
+        text-align: center;
     }
 
-    .socials-icons i {
-        width: 40px; /* Make icons even smaller */
-        height: 40px;
-        font-size: 18px;
+    .img-about-me {
+        width: 200px;
+        margin: 10px auto;
+    }
+
+    .socials-icons {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .socials-icons .i {
+        font-size: 20px;
+        margin: 0 8px;
+    }
+
+    #about img {
+        margin: 10px auto;
+        max-width: 90%;
+        max-height: 200px;
+    }
+
+    .about_text h2 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    .about_text p {
+        font-size: 14px;
+        margin-top: 15px;
+        text-align: left;
+    }
+
+    .about_text .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+        margin-top: 20px;
     }
 }
-
-
