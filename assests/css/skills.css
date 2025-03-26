@@ -4,10 +4,10 @@
     transition: transform 0.3s ease;
     background-color: #2a3244;
     background-color: #7c879f;
-    width: 367px;
+    width: 300px;
     height: 300px;
     margin: 10px;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 #skills .card:hover {
@@ -32,6 +32,11 @@
 
 /* Media Query for Small Screens (Mobile, 576px and below) */
 @media only screen and (max-width: 576px) {
+
+    #skill {
+        overflow-x: hidden;
+    }
+
     #skill .card {
         width: 350px;
     }

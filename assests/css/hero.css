@@ -1,7 +1,4 @@
-* {
-    /* border: 1px solid rgb(219, 217, 217); */
 
-}
 
 /* Full-Height Hero Section - Centered Content */
 .hero {
@@ -13,6 +10,8 @@
     background-color: #302f2f;
     color: white;
     padding: 0 10%;
+    overflow-x: hidden;
+
 }
 
 /* HEro content  */
